@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.a {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  
+}
+div.b {
+  width: 100px;
+  height: 100px;
+  background:blue;
+  transition: width 2s, height 4s;
+}
+
+div.c {
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 255, 13);
+  transition: width 2s, height 2s, transform 2s;
+}div.d{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+div.a:hover {
+  width: 300px;
+}
+div.b:hover {
+  width: 300px;
+  height: 300px;
+}
+div.c:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div class="a"></div><br>
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="b"></div>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+
+
+<div class="c"></div>
+<h1>CSS Animation</h1>
+
+<div class="d"></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+
+
+
+</body>
+</html>
+
+

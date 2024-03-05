@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+background-color: tan;
+color: black;
+}
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+body {
+background-color: blue;
+color: white;
+}
+}
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+body {
+background-color: olive;
+color: white;
+}
+}
+    </style>
+</head>
+<body>
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<!-- arrange images in ascending order of screen size -->
+<picture> 
+  <source srcset="https://www.gardendesign.com/pictures/images/675x529Max/site_3/echinacea-purpurea-coneflower-pixabay_11895.jpg" media="(max-width: 600px)">
+
+  <source srcset="https://www.gardendesign.com/pictures/images/675x529Max/site_3/lupines-lupinus-purple-stalk-purple-flower-pixabay_11880.jpg" media="(max-width: 992px)" >
+
+  
+  <source srcset="https://www.gardendesign.com/pictures/images/675x529Max/site_3/begonia-red-flowers-pixabay_11888.jpg" media="(max-width: 1500px)">
+ 
+  <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/lavender-lavandula-herb-pixabay_11876.jpg" alt="Flowers" style="width:auto;">
+</picture>
+<!-- viewport width -->
+<h3 style="font-size:10vw;">Responsive Text</h3>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+</body>
+</html>
+
